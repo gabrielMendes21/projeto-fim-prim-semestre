@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/anuncios', anuncioRoutes);
+app.use(anuncioRoutes);
 
 // Dados fictícios
 const games = [

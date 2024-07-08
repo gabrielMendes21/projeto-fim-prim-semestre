@@ -2,7 +2,7 @@ const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('tbgl_gameplays', 'root', '', {
   host: 'localhost',
-  dialect: 'mariadb'
+  dialect: 'mysql'
 });
 
 module.exports = sequelize;

@@ -4,7 +4,7 @@ const Anuncio = require('../models/anuncio');
 exports.getAllAnuncios = async (req, res) => {
   try {
     const anuncios = await Anuncio.findAll();
-    res.render('anuncios/index', { anuncios });
+    res.json(anuncios);
   } catch (err) {
     console.error('Erro ao listar os anúncios:', err);
     res.status(500).json({ message: 'Erro ao listar os anúncios' });
