@@ -1,4 +1,4 @@
-const Anuncio = require('../models/anuncio');
+const { Anuncio } = require('../models/associations');
 
 // Método para listar todos os anúncios
 exports.getAllAnuncios = async (req, res) => {

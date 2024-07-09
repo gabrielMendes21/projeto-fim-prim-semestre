@@ -1,11 +1,8 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
+const Jogo = require('./jogo');
 
 const Anuncio = sequelize.define('Anuncio', {
-  jogo: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
   data: {
     type: DataTypes.DATE,
     allowNull: false
