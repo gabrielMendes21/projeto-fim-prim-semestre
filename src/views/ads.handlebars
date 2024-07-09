@@ -1,10 +1,14 @@
 <main class="pl-80 pt-8 text-white">
-    <h1 class="font-bold text-4xl">Anúncios para {{game.name}}</h1>
-    <div class="bg-gray-500 flex flex-col w-max rounded px-5 py-3">
-        <span>Adolfo Roberto</span>
-        <span>Xbox 360</span>
-        <span>12/05/2024 - 10:30 às 16:00</span>
-        <span>Whatsapp: (11) 9999999999</span>
-        <span>Farmar muitos diamantes para conquistarmos o mundo!</span>
+    <h1 class="font-bold text-4xl">Anúncios para {{game.nome}}</h1>
+    <div class="flex gap-2 mt-5">
+        {{#each ads}}
+            <div class="bg-gray-500 flex flex-col w-max rounded px-5 py-3">
+                <span>{{this.contato}}</span>
+                <span>{{this.plataforma}}</span>
+                <span>{{this.data}} - {{this.horario}}</span>
+                <span>{{this.detalhes}}</span>
+            </div>
+        {{/each}}
     </div>
+    <button class="bg-green-500">Novo anúncio</button>
 </main>
