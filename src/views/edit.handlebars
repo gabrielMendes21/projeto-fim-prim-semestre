@@ -1,0 +1,35 @@
+<main>
+     {{#each anuncio}}
+
+  <form action="/updateAnuncio" method="post">
+    <div>
+      <label for="id">ID do Jogo:</label>
+      <input type="text" id="id" name="id" value="{{id}}" required>
+    </div>
+    <div>
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" value="{{data}}" required>
+    </div>
+    <div>
+      <label for="horario">Horário:</label>
+      <input type="time" id="horario" name="horario" value="{{horario}}" required>
+    </div>
+    <div>
+      <label for="plataforma">Plataforma:</label>
+      <input type="text" id="plataforma" name="plataforma" value="{{plataforma}}" required>
+    </div>
+    <div>
+      <label for="contato">Contato:</label>
+      <input type="text" id="contato" name="contato" value="{{contato}}" required>
+    </div>
+    <div>
+      <label for="detalhes">Detalhes:</label>
+      <textarea id="detalhes" name="detalhes" value"{{detalhes}}"></textarea>
+    </div>
+    <div>
+      <button type="submit">Atualizar Anúncio</button>
+    </div>
+  </form>
+
+      {{/each}}
+</main>

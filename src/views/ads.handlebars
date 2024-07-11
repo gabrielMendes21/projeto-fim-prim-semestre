@@ -8,7 +8,12 @@
                 <span>{{this.data}} - {{this.horario}}</span>
                 <span>{{this.detalhes}}</span>
             </div>
+            <div class="col">
+            <button  class="bg-green-500"><a href="/editar/{{id}}">editar</button>
+            <button type="button"><a href="/delete/{{id}}">delete</button>
+            </div>
         {{/each}}
+         <button class="bg-green-500"><a href="/create">anúncio</a></button>
     </div>
-    <button class="bg-green-500">Novo anúncio</button>
+
 </main>

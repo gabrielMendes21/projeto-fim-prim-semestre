@@ -1,0 +1,31 @@
+<main>
+    <form action="/createAnuncio" method="post">
+        <div>
+            <label for="JogoId">ID do Jogo:</label>
+            <input type="text" id="JogoId" name="JogoId" required>
+        </div>
+        <div>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+        </div>
+        <div>
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" required>
+        </div>
+        <div>
+            <label for="plataforma">Plataforma:</label>
+            <input type="text" id="plataforma" name="plataforma" required>
+        </div>
+        <div>
+            <label for="contato">Contato:</label>
+            <input type="text" id="contato" name="contato" required>
+        </div>
+        <div>
+            <label for="detalhes">Detalhes:</label>
+            <textarea id="detalhes" name="detalhes"></textarea>
+        </div>
+        <div>
+            <button type="submit">Criar Anúncio</button>
+        </div>
+    </form>
+</main>

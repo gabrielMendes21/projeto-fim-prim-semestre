@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const router = express.Router();
 const anuncioController = require('../controllers/anuncioController');
 
@@ -14,4 +14,4 @@ router.post('/anuncios/edit/:id', anuncioController.updateAnuncio);
 // Rota para excluir um anúncio
 router.post('/anuncios/delete/:id', anuncioController.deleteAnuncio);
 
-module.exports = router;
+module.exports = router;*/

@@ -12,7 +12,7 @@ exports.getAllAnuncios = async (req, res) => {
 };
 
 // Método para criar um novo anúncio
-exports.createAnuncio = async (req, res) => {
+/*exports.createAnuncio = async (req, res) => {
   const { JogoId, data, horario, plataforma, contato, detalhes } = req.body;
   try {
     // Validação básica dos dados
@@ -25,7 +25,7 @@ exports.createAnuncio = async (req, res) => {
     console.error('Erro ao criar o anúncio:', err);
     res.status(500).json({ message: 'Erro ao criar o anúncio' });
   }
-};
+};*/
 
 // Método para atualizar um anúncio existente
 exports.updateAnuncio = async (req, res) => {
